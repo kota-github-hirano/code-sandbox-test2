@@ -1,3 +1,67 @@
 body {
   font-family: sans-serif;
 }
+
+input {
+  border-radius: 16px;
+  border: none; /*ボーダー削除*/
+  padding: 6px 16px; /*内側の余白[上下6px左右16px]*/
+  outline: none; /*フォーカスinしたときの縁削除*/
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  /*カーソルを当てたときの設定*/
+  background-color: #ff7fff; /*背景色*/
+  color: #fff; /*文字の色*/
+  cursor: pointer; /*カーソルの形*/
+}
+
+li {
+  margin-right: 8px;
+}
+
+.input-area {
+  background-color: #c1ffff;
+  width: 400px; /*横幅*/
+  height: 30px; /*縦幅*/
+  padding: 8px; /*内側の余白[上下左右8px]*/
+  margin: 8px; /*外側の余白*/
+  border-radius: 8px; /*角丸*/
+}
+
+.incomplete-area {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px; /*縦幅の最小値*/
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center; /*センタリング*/
+  margin-top: 0; /*上の空白を0*/
+  font-weight: bold; /*ボールド*/
+  color: #666;
+}
+
+.list-row {
+  display: flex; /*横並び配置*/
+  align-items: center; /*ヨコの中央揃え*/
+  padding-bottom: 4px; /*下側の余白*/
+}
